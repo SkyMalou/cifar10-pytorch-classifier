@@ -1,0 +1,31 @@
+# Python cache and build artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+build/
+dist/
+*.egg-info/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDE and editor settings
+.idea/
+.vscode/
+*.swp
+
+# Local datasets and training logs
+data/
+logs/
+
+# Temporary model created by quick_test_train.py
+quick_test.pth
+
+# Operating system files
+.DS_Store
+Thumbs.db

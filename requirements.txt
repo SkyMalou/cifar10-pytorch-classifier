@@ -1,0 +1,32 @@
+# CIFAR-10 图像分类项目依赖
+# Python 3.13
+#
+# 安装（CPU 版）：
+#     pip install -r requirements.txt
+#
+# 安装（CUDA 12.8 版，推荐，需要 NVIDIA 显卡）：
+#     pip install torch torchvision --index-url https://download.pytorch.org/whl/cu128
+#     pip install -r requirements.txt
+#
+# 注意：torch 的 CUDA 版本号（+cu128）只能在 PyTorch 官方源获取，
+#       因此这里只固定主版本号，CUDA 版本请按上面的命令单独安装。
+
+# ---- 深度学习框架 ----
+torch==2.11.0
+torchvision==0.26.0
+
+# ---- 数值计算 ----
+numpy==2.5.2
+
+# ---- 图像读取 ----
+pillow==12.3.0
+
+# ---- 结果可视化（训练曲线、混淆矩阵、样本图）----
+matplotlib==3.11.2
+seaborn==0.13.2
+
+# ---- 评估指标（classification_report / confusion_matrix）----
+scikit-learn==1.9.1
+
+# ---- 训练日志 ----
+tensorboard==2.21.0
